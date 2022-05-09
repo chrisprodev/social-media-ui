@@ -79,7 +79,7 @@ export default TopBar;
 
 const Container = styled.nav`
   padding: 1rem 0;
-  border-bottom: solid 2px #f8f8f8;
+  border-bottom: solid 2px #f4f4f4;
 `;
 
 const Wrapper = styled.div`
