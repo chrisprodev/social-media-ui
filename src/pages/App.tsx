@@ -1,19 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import FeedContainer from "../components/FeedContainer";
 import RightBar from "../components/RightBar";
 import SideBar from "../components/SideBar";
 import TopBar from "../components/TopBar";
 
 const App: React.FC = () => {
-  const reFectch = () => {
-    console.log("Refetching...");
-  };
-
   return (
     <Container>
       <TopBar />
       <ContentContainer>
         <SideBar />
+        <FeedContainer />
         <RightBar />
       </ContentContainer>
     </Container>
