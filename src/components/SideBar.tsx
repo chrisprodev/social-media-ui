@@ -135,6 +135,10 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+
+  span:first-child {
+    margin-top: 0;
+  }
 `;
 
 const Menu = styled.span<{ active?: boolean }>`
