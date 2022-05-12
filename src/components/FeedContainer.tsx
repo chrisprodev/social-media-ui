@@ -1,11 +1,13 @@
 import React from "react";
 import InputPost from "./InputPost";
 import styled from "styled-components";
+import PostContent from "./PostContent";
 
 const FeedContainer: React.FC = () => {
   return (
     <Container>
       <InputPost />
+      <PostContent />
     </Container>
   );
 };
