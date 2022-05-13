@@ -69,6 +69,7 @@ const TopBar: React.FC = () => {
               />
             </svg>
           </IconsContainer>
+          <Avatar src="/avatars/1.png" alt="" />
         </RightContent>
       </Wrapper>
     </Container>
@@ -137,7 +138,7 @@ const IconsContainer = styled.div`
     width: 1px;
     height: 2.4rem;
     border-radius: 1px;
-    margin: 0 2rem;
+    margin: 0 1rem;
   }
 
   svg {
@@ -145,4 +146,10 @@ const IconsContainer = styled.div`
     height: 2.2rem;
     width: auto;
   }
+`;
+
+const Avatar = styled.img`
+  height: 3.6rem;
+  width: auto;
+  border-radius: 50%;
 `;
