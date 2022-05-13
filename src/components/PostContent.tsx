@@ -120,7 +120,7 @@ const ContentBody = styled.div`
 `;
 
 const Hashtags = styled.p`
-  color: #7a98e9;
+  color: var(--main);
 `;
 
 const Interactions = styled.div`

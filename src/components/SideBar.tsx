@@ -129,7 +129,7 @@ const SideBar = () => {
 export default SideBar;
 
 const Wrapper = styled.div`
-  width: 22rem;
+  width: 25rem;
 `;
 
 const Container = styled.div`
@@ -142,20 +142,26 @@ const Container = styled.div`
 `;
 
 const Menu = styled.span<{ active?: boolean }>`
+  cursor: pointer;
   display: flex;
   font-size: 1.6rem;
   padding: 1rem 1.4rem;
   margin-top: 0.5rem;
   font-weight: 600;
   align-items: center;
-  background: ${({ active }) => (active ? "#F1F4FD" : "none")};
-  color: ${({ active }) => (active ? "#7A98E9" : "#707070")};
-  border-radius: ${({ active }) => (active ? "0.5rem" : "none")};
+  background: ${({ active }) => (active ? "var(--main-1)" : "none")};
+  color: ${({ active }) => (active ? "var(--main)" : "#707070")};
+  border-radius: 0.5rem;
 
   svg {
     height: 1.8rem;
     width: auto;
     margin-right: 1rem;
+  }
+
+  :hover {
+    background: var(--main-1);
+    color: var(--main);
   }
 `;
 
@@ -176,20 +182,31 @@ const Comunities = styled.div`
       cursor: pointer;
       height: 1.6rem;
       width: auto;
+      transition: all 150ms ease;
+
+      :hover {
+        color: var(--main);
+      }
     }
   }
 `;
 
 const Community = styled.span`
+  cursor: pointer;
   display: flex;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 0.7rem 0;
+  transition: all 150ms ease;
 
   img {
     height: 2.4rem;
     width: auto;
     border-radius: 0.4rem;
     margin-right: 1rem;
+  }
+
+  :hover {
+    color: var(--main);
   }
 `;

@@ -15,5 +15,5 @@ const RightBar: React.FC = () => {
 export default RightBar;
 
 const Wrapper = styled.div`
-  width: 22rem;
+  width: 25rem;
 `;

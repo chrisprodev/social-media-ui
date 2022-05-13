@@ -56,8 +56,9 @@ const Header = styled.div`
   }
 
   span {
+    cursor: pointer;
     font-size: 1.6rem;
-    color: #7090e8;
+    color: var(--main);
   }
 `;
 
@@ -66,16 +67,22 @@ const Comunities = styled.div`
 `;
 
 const Community = styled.span`
+  cursor: pointer;
   display: flex;
   align-items: center;
   font-size: 1.6rem;
   font-weight: 600;
   margin: 1rem 0;
+  transition: all 150ms ease;
 
   img {
     height: 2.6rem;
     width: auto;
     border-radius: 0.4rem;
     margin-right: 1rem;
+  }
+
+  :hover {
+    color: var(--main);
   }
 `;

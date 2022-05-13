@@ -68,8 +68,9 @@ const Header = styled.div`
   }
 
   span {
+    cursor: pointer;
     font-size: 1.6rem;
-    color: #7090e8;
+    color: var(--main);
   }
 `;
 
@@ -93,9 +94,11 @@ const People = styled.div`
 `;
 
 const Person = styled.div`
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin: 1.4rem 0 0 0;
+  transition: all 150ms ease;
 
   img {
     height: 4rem;
@@ -103,5 +106,11 @@ const Person = styled.div`
     border-radius: 0.4rem;
     margin-right: 1rem;
     border-radius: 50%;
+  }
+
+  :hover {
+    span {
+      color: var(--main);
+    }
   }
 `;

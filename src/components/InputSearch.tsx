@@ -23,12 +23,15 @@ const InputSearch = () => {
 };
 
 export default InputSearch;
+
 const Container = styled.div`
+  width: 23rem;
   background: #f7f7f7;
   display: flex;
   align-items: center;
   padding: 1rem;
   border-radius: 0.5rem;
+  transition: all 150ms ease;
 
   svg {
     width: 2rem;
@@ -41,5 +44,10 @@ const Container = styled.div`
     outline: none;
     background: transparent;
     margin-left: 1rem;
+  }
+
+  :focus-within {
+    outline: solid 1px var(--main-5);
+    box-shadow: 0px 0px 0px 4px var(--main-3);
   }
 `;

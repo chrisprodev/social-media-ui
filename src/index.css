@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
 
+:root {
+  --main:#306cea;
+  --main-hover:rgb(33, 81, 187);
+  --main-5:rgb(48, 108, 234, 0.5);
+  --main-3:rgb(48, 108, 234, 0.3);
+  --main-1:rgba(48, 108, 234, 0.06);
+}
+
+
 html {
   font-size: 62.5%;
 }
@@ -7,6 +16,7 @@ html {
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif !important;
+  color: #333637;
 }
 
 code {

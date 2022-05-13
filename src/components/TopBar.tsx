@@ -97,34 +97,48 @@ const RightContent = styled.div`
 `;
 
 const ButtonSecondary = styled.button`
+  cursor: pointer;
   display: flex;
   align-items: center;
-  border: none;
-  outline: solid 2px #f8f8f8;
+  box-sizing: border-box;
+  border: solid 2px var(--main);
+  color: var(--main);
   background: #fff;
   border-radius: 0.5rem;
+  transition: all 150ms ease;
 
   svg {
-    color: #666666;
     height: 1.6rem;
     width: auto;
     margin-right: 1rem;
   }
+
+  :hover {
+    color: #fff;
+    background: var(--main);
+  }
 `;
 
 const ButtonPrimery = styled.button`
+  cursor: pointer;
   display: flex;
   align-items: center;
-  border: none;
-  outline: none;
-  background: #7090e8;
+  box-sizing: border-box;
+  border: solid 2px var(--main);
+  background: var(--main);
   border-radius: 0.5rem;
   color: #fff;
+  transition: all 150ms ease;
 
   svg {
     height: 1.6rem;
     width: auto;
     margin-right: 1rem;
+  }
+
+  :hover {
+    background: var(--main-hover);
+    border: solid 2px var(--main-hover);
   }
 `;
 
@@ -138,13 +152,19 @@ const IconsContainer = styled.div`
     width: 1px;
     height: 2.4rem;
     border-radius: 1px;
-    margin: 0 1rem;
+    margin: 0 2rem;
   }
 
   svg {
+    cursor: pointer;
     color: #666666;
     height: 2.2rem;
     width: auto;
+    transition: all 150ms ease;
+
+    :hover {
+      color: var(--main);
+    }
   }
 `;
 
