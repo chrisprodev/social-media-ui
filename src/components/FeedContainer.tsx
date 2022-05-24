@@ -2,12 +2,14 @@ import React from "react";
 import InputPost from "./InputPost";
 import styled from "styled-components";
 import PostContent from "./PostContent";
+import { postData } from "../constants/posts";
 
 const FeedContainer: React.FC = () => {
   return (
     <Container>
       <InputPost />
-      <PostContent />
+      {postData &&
+        postData.map((post) => <PostContent {...post} />)}
     </Container>
   );
 };
